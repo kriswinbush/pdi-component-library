@@ -1,0 +1,36 @@
+pdi-media-controller {
+    .container {
+        display: flex;
+        align-items: center;
+        .loop {
+            @include media-button($fa-var-undo-alt, "loop");
+        }
+        .play {
+            @include media-button($fa-var-play, "play");
+        }
+        .pause {
+            @include media-button($fa-var-pause, "pause");
+        }   
+        .step-back {
+            @include media-button($fa-var-step-backward, "back");
+        }
+        .step-forward {
+            @include media-button($fa-var-step-forward, "forward");
+        }
+        .rewind {
+            @include media-button($fa-var-backward, "rewind");
+        }
+        .fast-forward {
+            @include media-button($fa-var-forward, "fast forward");
+        }
+        .next {
+            @include media-button($fa-var-caret-square-right, "next");
+        }
+        .previous {
+            @include media-button($fa-var-caret-square-left, "previous");
+        }
+        .active {
+            color: $pdi-primary-color !important;
+        }
+    }
+}

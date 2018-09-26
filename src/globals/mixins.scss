@@ -1,0 +1,35 @@
+@mixin media-button($label, $tooltip) {
+    @extend %fa-icon;
+    @extend .fas;
+    display: inline-block;
+    position: relative;
+    color: white;
+    transition: color .35s ease-in-out;
+    padding: 0 5px;
+    &:hover {
+        color: $pdi-primary-color;
+    }
+    &:before {
+        content: fa-content($label);
+    }
+    &::after {
+        background-color:black;
+        padding: 5px;
+        color: white;
+        content: $tooltip;
+        font-size: inherit;
+        opacity: 0;
+        position: absolute;
+        z-index: 9999;
+        bottom: -65%; 
+        left: 0%;
+        transition: all .2s ease-out;
+    }
+    &:hover {
+        &::after {
+            transform: translateX(0%) 
+            translateY(75%);
+            opacity: 1;
+        }
+    }
+}
