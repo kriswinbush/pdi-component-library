@@ -1,5 +1,5 @@
 {
-  "name": "pdi-component",
+  "name": "pdi-component-library",
   "version": "0.0.1",
   "description": "Painted Dogs Interactive Component Library",
   "module": "dist/esm/index.js",
@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/kriswinbush/pdi-component-library.git"
   },
-  "author": "Ionic Team",
+  "author": "Kris J Winbush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/kriswinbush"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/kriswinbush",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
